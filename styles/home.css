@@ -3,6 +3,10 @@ html{
 
 }
 
+body{
+    height: 100vh;
+}
+
 .content{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -10,6 +14,7 @@ html{
     grid-template-areas: 
         'header header'
         'left right';
+    height: 100%;
 }
 
 header{
@@ -19,6 +24,7 @@ header{
 #bg{
     grid-area: left;
     background: url(/assets/img/boy-bg.svg) no-repeat top/contain;
+    background-position: -6rem;
 }
 
 main{
@@ -29,7 +35,7 @@ main{
 }
 
 main .container{
-    width: min(36.3rem 100%);
+    width: min(36.3rem, 100%);
 }
 
 main h2, main button, main .button{
@@ -68,7 +74,8 @@ button, .button{
     transition: filter .3s;
 }
 
-button:hover, .button:hover{
+button:hover,
+.button:hover{
     filter: brightness(1.2);
 }
 
@@ -100,4 +107,65 @@ button,
 
 .content header img{
     width: 16.7rem;
+}
+
+/* separator line */
+
+.separator{
+    display: flex;
+    align-items: center;
+    gap: 1.345rem;
+    line-height: 0;
+
+    margin: 4rem 0;
+}
+
+.separator div:nth-child(2){
+    font-family: 'Poppins', sans-serif;
+    color: var(--gray-blue);
+    font-weight: 400;
+
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3){
+    background: var(--gray-blue);
+    width: 100%;
+    height: 1px;    
+}
+
+/* balls */
+
+.ball{
+    background: var(--light-blue);
+    width: 21.2rem;
+    height: 21.2rem;
+    clip-path: circle();
+    
+    position: fixed;
+    opacity: 50%;
+
+}
+
+.ball.bottom{
+    bottom: -15rem;
+    right: 5rem;
+}
+
+.ball.top{
+    height: 63.35rem;
+    width: 63.35rem;
+
+    top: -40rem;
+    right: -40rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }

@@ -14,9 +14,6 @@ html{
     --gray-light: #E5EAF1
 
     font-size: 62.5%; /* 10px */
-    /* --texts: font-family: 'Open Sans', sans-serif; */
-    /* --title-button: font-family: 'Poppins', sans-serif; */
-    
 }
 
 * {
@@ -29,8 +26,12 @@ html{
 }z
 
 body{
+    display: flex;
+
+    
     height: 100vh;
     background: var(--background);
+
 }
 
 body, button, input, textarea {
