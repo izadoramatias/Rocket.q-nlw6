@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/global.css">
     <!-- <link rel="stylesheet" href="styles/home.css"> -->
     <link rel="stylesheet" href="styles/room.css">
+    <link rel="stylesheet" href="styles/modal.css">
 
 
     <!-- fonts -->
@@ -62,14 +63,15 @@
                 </h2>
                 <div class="questions">
 
+
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/img/user-avatar.svg" alt="Ícone padrão de usuário">
+                                <img src="assets/img/user-icon.svg" alt="Ícone padrão de usuário">
                             </div>
 
                             <div class="question">
-                                <p>Qual a diferença entre const, let e var no JavaScript?</p>
+                                <p>O que é JavaScript?</p>
                             </div>
                         </div>
                         <div class="actions">
@@ -83,6 +85,69 @@
                             </a>
                         </div>
                     </div>
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/img/user-icon.svg" alt="Ícone padrão de usuário">
+                            </div>
+
+                            <div class="question">
+                                <p>O que é TypeScript</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a class="check" href="#">
+                                <img src="assets/img/check-icon.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a class="delete" href="#">
+                                <img src="assets/img/trash-icon.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/img/user-icon.svg" alt="Ícone padrão de usuário">
+                            </div>
+
+                            <div class="question">
+                                <p>Você já sabe quais as bases você precisa melhorar para alcançar o seu próximo nível com maestria? Definiu o seu foco e objetivo para seguir em frente? Estou curiosa e embasbacada com sua perseverança por ter alcançado a terceira aula e sei que vai continuar até o fim. Então responde aí pra gente!!</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a class="check" href="#">
+                                <img src="assets/img/check-icon.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a class="delete" href="#">
+                                <img src="assets/img/trash-icon.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/img/user-icon.svg" alt="Ícone padrão de usuário">
+                            </div>
+
+                            <div class="question">
+                                <p>Qual a diferença entre const, let e var no JavaScript?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a class="check" href="#">
+                                <img src="assets/img/check-icon.svg" alt="Marcar como lida">
+                                Pergunta lida
+                            </a>
+                            <!-- <a class="delete" href="#">
+                                <img src="assets/img/trash-icon.svg" alt="Excluir">
+                                Excluir
+                            </a> -->
+                        </div>
+                    </div>
 
                 </div>
 
@@ -90,6 +155,27 @@
 
         </main>
     </div>
+
+    <!-- **** MODAL **** -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Excluir Pergunta</h2>
+            <p>Tem certeza que você deseja excluir esta pergunta?</p>
+
+            <form action="">
+                <input required id="password" type="password" name="password" placeholder="Digite a senha de admin">
+                <label for="password" class="sr-only">Digite sua senha de admin</label>
+
+                <div class="buttons">
+                    <div role='button' class="button cancel gray">Cancelar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+                
+            </form>
+
+        </div>
+    </div>
+
 </body>
 
 </html>
