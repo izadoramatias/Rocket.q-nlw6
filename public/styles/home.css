@@ -22,7 +22,7 @@ header{
 
 #bg{
     grid-area: left;
-    background: url(/assets/img/boy-bg.svg) no-repeat top/contain;
+    background: url('/img/boy-bg.svg') no-repeat top/contain;
     background-position: -6rem;
 }
 
