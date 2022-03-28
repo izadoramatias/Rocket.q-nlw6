@@ -14,12 +14,14 @@
     visibility: hidden;
     opacity: 0;
 
-    transition: cubic-bezier(.4,.43,.39,.75);
 }
 
 .modal-wrapper.active{
     visibility: visible;
     opacity: 1;
+
+    transition: ease .2s;
+
 }
 
 .modal-wrapper .modal{

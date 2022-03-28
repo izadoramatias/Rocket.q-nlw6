@@ -1,6 +1,9 @@
 export default function Modal(){
 
     const modalWrapper = document.querySelector('.modal-wrapper');
+    const takeCancelButton = document.querySelector('.modal .button.cancel')
+
+    takeCancelButton.addEventListener('click', close)
 
     function open(){
 
@@ -8,7 +11,7 @@ export default function Modal(){
 
     }
     function close(){
-        document.querySelector('.modal-wrapper').classList.remove('active')
+        modalWrapper.classList.remove('active')
 
     }
 
