@@ -8,8 +8,8 @@
     <title>Criar sala - Rocket.Q</title>
 
     <!-- styles -->
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/home.css">
 
 
     <!-- fonts -->
@@ -23,7 +23,9 @@
 
     <div id="home" class="content">
         <header>
-            <img src="img/Logo.svg" alt="logo rocket.q">
+            <a href="/">
+                <img src="/img/Logo.svg" alt="logo rocket.q">
+            </a>
         </header>
 
         <div id="bg">
@@ -33,32 +35,8 @@
 
         <main>
             <div class="container">
-                <section>
-                    <h2>Entre como participante</h2>
-                    <form action="">
-                        <input id="room-id" type="number" placeholder="Código da sala">
-                        <label class="sr-only" for="room-id">Código da Sala</label>
-
-                        <button>
-                            <img src="img/enter-room.svg" alt="ícone de entrar na sala">
-                            Entrar na sala
-                        </button>
-                    </form>
-                </section>
-
-                <div class="separator">
-                    <div></div>
-                    <div>ou</div>
-                    <div></div>
-                </div>
-
-                <section>
-                    <h2>Crie sua própria sala de forma fácil</h2>
-                    <a role="button" class="button outlined" href="create-pass.html">
-                        <img src="img/users.svg" alt="ícone de usuários">
-                        Criar Sala
-                    </a>
-                </section>
+                
+                <%- include(`parts/${page}`) %>
 
             </div>
         </main>
