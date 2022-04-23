@@ -38,7 +38,7 @@
                     <img src="/img/copy-icon.svg" alt="botão de copiar">
                 </div>
 
-                <a href="#" class="button">
+                <a href="/create-pass" class="button">
                     <img src="/img/users-white.svg" alt="ícone de usuários">
                     Criar sala
                 </a>
@@ -67,6 +67,12 @@
                     Perguntas da comunidade
                 </h2>
                 <div class="questions">
+
+                    <% if(isNoQuestions){
+                        %> 
+                            <%- include('parts/noquestion')%>
+                        <%
+                    } %> 
 
                     <% questions.forEach(question => { %> 
                         
@@ -107,7 +113,7 @@
                                 </div>
                             </div>
                             <div class="actions">
-                                <a class="delete" href="#" data-id="<%= questionRead.id %> ">
+                                <a name="delete" class="delete" href="#" data-id="<%= questionRead.id %> ">
                                     <img src="/img/trash-icon.svg" alt="Excluir">
                                     Excluir
                                 </a>
