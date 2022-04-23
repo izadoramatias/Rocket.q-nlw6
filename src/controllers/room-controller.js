@@ -12,17 +12,15 @@ module.exports = {
             roomId += Math.floor(Math.random() * 10).toString()
         }
 
-        // await db.run(`INSERT INTO rooms (
-        //     id,
-        //     pass
-        // ) VALUES (
-        //     ${parseInt(roomId)},
-        //     ${pass}
-        // )`)
-
-        console.log(parseInt(roomId))
+        await db.run(`INSERT INTO rooms (
+            id,
+            pass
+        ) VALUES (
+            ${parseInt(roomId)},
+            "${pass}"
+        )`)
         
-        // await db.close()
+        await db.close()
 
         res.redirect(`/room/${roomId}`)
     }
