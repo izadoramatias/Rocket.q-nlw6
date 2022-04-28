@@ -16,6 +16,7 @@ html{
 
 #room header .buttons{
     display: flex;
+    flex-wrap: wrap;
     gap: .8rem;
 }
 
@@ -96,7 +97,6 @@ html{
 #room .questions{
     height: 33.4rem;
     max-height: 100%;
-    overflow-y: auto;
 }
 
 .question-wrapper{
@@ -123,8 +123,6 @@ html{
 .question-wrapper .question-content .user{
     background-color: var(--blue);
     border-radius: 50%;
-    /* height: 5.2rem;
-    width: 5.2rem; */
     padding: 1.4rem;
 
     display: flex;
@@ -146,6 +144,7 @@ html{
 
 .question-wrapper .actions{
     justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 2.4rem;
 }
 
@@ -196,4 +195,41 @@ html{
     margin-top: 1.3rem;
     line-height: 1.9rem;
     color: var(--gray-dark);
+}
+
+@media (max-width: 560px){
+    #room header{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px 0px;
+    }
+}
+
+@media (max-width: 425px){
+    .question-wrapper .actions{
+        margin-top: 13px;
+    }
+
+    .question-wrapper .actions > a{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 428px){
+    #question-form form footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px 0;
+    }
+
+    #question-form form footer button{
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px){
+    button, .button{
+        width: 100%;
+    }
 }

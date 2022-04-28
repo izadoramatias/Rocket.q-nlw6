@@ -50,7 +50,7 @@
 
 .modal-wrapper .modal form > input{
     margin-bottom: 4rem;
-    width: min(70%, 30.2rem);
+    width: min(100%, 30.2rem);
     padding: 1.3rem 1.6rem;
 
     background-color: transparent;
@@ -80,4 +80,22 @@
 .modal-wrapper .modal .buttons > button,
 .modal-wrapper .modal .buttons > .button{
     padding: 1.3rem 3.2rem;
+}
+
+@media (max-width: 550px){
+    .modal-wrapper .modal{
+        padding: 6.4rem 4.6rem;
+    
+    }
+}
+
+@media (max-width: 409px){
+    .modal-wrapper .modal .buttons{
+        flex-direction: column;
+    }
+
+    .modal-wrapper .modal .buttons > button,
+    .modal-wrapper .modal .buttons > .button{
+        width: 100%;
+}
 }
